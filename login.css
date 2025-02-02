@@ -1,0 +1,172 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(23, 20, 20); /* Optional: dark background for better contrast */
+  }
+  
+  #form {
+    display: grid;
+    place-items: center;
+    width: 300px;
+    height: 472px;
+    padding: 25px;
+    background-color: pink;
+    box-shadow: 0px 15px 60px white;
+    outline: 1px solid rgb(196, 83, 102);
+    border-radius: 10px;
+    position: relative;
+  }
+ 
+  
+  #form-body {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the input fields */
+  }
+  
+  #welcome-lines {
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  #welcome-line-1 {
+    color: #000000;
+    font-weight: 600;
+    font-size: 40px; /* Original font size */
+  }
+  
+  #welcome-line-2 {
+    color: #000000;
+    font-size: 18px;
+    margin-top: 17px;
+  }
+  
+  #input-area {
+    margin-top: 40px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-inp {
+    padding: 8px 18px; /* Reduced padding for smaller size */
+    background: transparent;
+    border: 1px solid #000000;
+    line-height: 1;
+    border-radius: 8px;
+    width: 250px; /* Set a fixed smaller width */
+    margin-bottom: 15px; /* Space between the inputs */
+  }
+  
+  .form-inp:focus {
+    border: 1px solid #000000;
+  }
+  
+  .form-inp input {
+    width: 100%;
+    background: none;
+    font-size: 12px; /* Reduced font size */
+    color: #000000;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .form-inp input:focus {
+    outline: none;
+  }
+  
+  #submit-button-cvr {
+    margin-top: 20px;
+  }
+  
+  #submit-button {
+    display: block;
+    width: 100%;
+    color: #000000;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+    padding: 14px 13px;
+    border: 0;
+    outline: 1px solid #000000;
+    border-radius: 8px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+  }
+  
+  #submit-button:hover {
+    transition: all ease-in-out .3s;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  #forgot-pass {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  #forgot-pass a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+  }
+  
+  #forgot-pass a:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+  }
+  
+  #forgot-pass a:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  #bar {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    width: 28px;
+    height: 8px;
+    margin-left: -33px;
+    background-color: #000000;
+    border-radius: 10px;
+  }
+  
+  #bar:before,
+  #bar:after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #ececec;
+    border-radius: 50%;
+  }
+  
+  #bar:before {
+    right: -20px;
+  }
+  
+  #bar:after {
+    right: -38px;
+  }
